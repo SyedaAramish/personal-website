@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #6f42c1; /* Purple color for headings */
+}
+
+.purple-700 {
+  color: #6f42c1; /* Purple color for main heading */
+}
+
+.purple-600 {
+  color: #7952b3; /* Darker purple for subheadings */
+}
+
+/* Card Shadow Effect */
+.shadow-lg {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:shadow-2xl:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Background styling for the page */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #d1fae5, #bfdbfe); /* Gradient background from light green to light blue */
+}
+
+.bg-gray-50 {
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+
+/* Background Colors */
+.bg-darkBlue {
+  background-color: #1e3a8a; /* Dark Blue */
+}
+
+.bg-lightGrey {
+  background-color: #f3f4f6; /* Light Grey */
+}
+
+/* Text Colors */
+.text-darkBlue {
+  color: #1e3a8a; /* Dark Blue */
+}
+
+.text-lightGrey {
+  color: #f3f4f6; /* Light Grey */
+}
+
+/* Borders */
+.border-black {
+  border-color: #000000; /* Black Border */
+}
+
+/* Font Styling */
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Other Styling */
+.text-blue-500 {
+  color: #3b82f6; /* Blue for GitHub Link */
+}
+
+.hover\:text-blue-700:hover {
+  color: #adbcee; /* Darker Blue on hover */
+}
+
+/* Add a stylish font transition for the heading */
+.stylish-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  position: relative;
+  display: inline-block;
+  font-family: 'Pacifico', cursive; /* Example of a stylish font */
+  animation: fontTransition 3s ease-in-out infinite alternate; /* Apply animation */
+}
+
+/* Highlighted part of the text */
+.highlight {
+  color: #ff007f;
+  position: relative;
+}
+
+/* Keyframes for text transition */
+@keyframes fontTransition {
+  0% {
+    letter-spacing: 1px;
+    color: #1f2937;
+    transform: scale(1);
+  }
+  50% {
+    letter-spacing: 3px;
+    color: #ff007f;
+    transform: scale(1.2);
+  }
+  100% {
+    letter-spacing: 5px;
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+}
+
+/* Add this to make sure fonts are imported */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+.bg-dark-brown {
+  background-color: #4B2E2A;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #000; /* Arrow color */
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.space-y-4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.w-64 {
+  width: 256px;
+}
+
+.text-blue-500 {
+  color: #4267B2; /* Facebook blue */
+}
+
+.text-pink-500 {
+  color: #E1306C; /* Instagram pink */
+}
+
+.text-red-500 {
+  color: #D44638; /* Email red */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-cream {
+  background-color: #f5f5dc; /* Light cream background */
+}
+
+.bg-brown-light {
+  background-color: #d2b48c; /* Light brown background for the left section */
+}
+
+.text-brown-dark {
+  color: #5d4037; /* Dark brown text color */
+}
+
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+ 
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
